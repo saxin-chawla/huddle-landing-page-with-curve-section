@@ -1,0 +1,201 @@
+body{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+header button{
+    border-radius: 2rem;
+    height: 1.8rem;
+    width: 5rem;
+    background-color: white;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    
+}
+
+header button:hover{
+    color: hsl(321, 100%, 78%);
+    border: 1px solid hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+header h1 img {
+    height: 1.9rem;
+}
+
+main section {
+    margin-bottom: 4rem;
+    margin-right: 0px;
+}
+main .welcome{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main  .btn{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    line-height: 2.7rem;
+    border:2px solid white;
+    border-radius: 2rem;
+    width: 13rem;
+}
+main  .btn:hover{
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
+main .mockups img {
+    margin: 2rem 0px;
+    width: 85vw;
+}
+main .reachOfCommunity{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    
+}
+main .reachOfCommunity h1{
+    font-size: 4rem;
+    margin: 0px;
+}
+main .reachOfCommunity .communuties{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+main .reachOfCommunity .messages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .contentPart{
+    background-color: #f6fbff;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem 5rem;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+main .contentPart img{
+    width: 45vw;
+}
+.upperCurve{
+    line-height: 0px;
+
+
+}
+.upperCurve img , .lowerCurve img{
+    width: 100%;
+}
+
+
+main .flowingContent{
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem;
+    text-align: center; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* padding: 1rem 5rem; */
+    text-align: center;
+    align-items: center;
+}
+
+main .flowingContent img {
+    width: 45vw;
+    /* margin-right: 1rem; */
+}
+main .readyToBuild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .footerContent{
+    background-color: #00252e;
+    color: white;
+    display: flex;
+    margin-top: 0%;
+    justify-content: center;
+    /* align-items: baseline; */
+    padding: 2rem 5rem;
+}
+footer .footerContent .contact{
+    margin-right: 1rem;
+}
+footer h1 img{
+    border-color:5px solid white;
+}
+footer p img{
+    margin-right: 0.8rem ;
+}
+footer p i {
+    font-size: 1.3rem;
+    margin-right:0.5rem ;
+}
+footer .subscribe input {
+    line-height: 1.5rem;
+}
+footer .subscribe button{
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    width: 6rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+
+@media screen and (max-width:375px) {
+    main .reachOfCommunity{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    main .contentPart , footer .footerContent , main .flowingContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0%;
+    }
+
+    main .contentPart .content , footer .footerContent .contact{
+        order: 2;
+    }
+    main .contentPart .image , footer .footerContent .newsletter{
+        order: 1;
+    }
+}
